@@ -4,16 +4,13 @@
   "description": "A desktop app for batch converting JPEG images to PDF",
   "main": "main.js",
   "scripts": {
-    "start": "electron .",
-    "build": "electron-builder"
+    "start": "electron ."
   },
   "dependencies": {
-    "pdf-lib": "^1.17.1",
-    "sharp": "^0.33.0",
-    "electron-is-dev": "^2.0.0"
+    "pdf-lib": "1.17.1",
+    "electron-is-dev": "2.0.0"
   },
   "devDependencies": {
-    "electron": "^27.0.0",
-    "electron-builder": "^24.6.4"
+    "electron": "27.0.0"
   }
 }
