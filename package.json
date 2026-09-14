@@ -3,53 +3,17 @@
   "version": "1.0.0",
   "description": "A desktop app for batch converting JPEG images to PDF",
   "main": "main.js",
-  "homepage": "./",
   "scripts": {
     "start": "electron .",
-    "dev": "concurrently \"npm run react-start\" \"wait-on http://localhost:3000 && electron .\"",
-    "react-start": "react-scripts start",
-    "react-build": "react-scripts build",
-    "build": "electron-builder",
-    "build-mac": "electron-builder --mac",
-    "build-win": "electron-builder --win",
-    "build-linux": "electron-builder --linux"
+    "build": "electron-builder"
   },
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
     "pdf-lib": "^1.17.1",
     "sharp": "^0.33.0",
     "electron-is-dev": "^2.0.0"
   },
   "devDependencies": {
     "electron": "^27.0.0",
-    "electron-builder": "^24.6.4",
-    "concurrently": "^8.2.1",
-    "wait-on": "^7.0.1"
-  },
-  "build": {
-    "appId": "com.jasonconverter.app",
-    "files": [
-      "main.js",
-      "preload.js",
-      "src/**/*",
-      "node_modules/**/*"
-    ],
-    "directories": {
-      "buildResources": "assets"
-    }
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "electron-builder": "^24.6.4"
   }
 }
